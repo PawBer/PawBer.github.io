@@ -1,0 +1,36 @@
+html {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+    /* Background pattern from Toptal Subtle Patterns */
+    background-image: url(../img/webb-dark.png);
+    font-size: 20px;
+}
+body {
+    background-color: transparent;
+}
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+a:hover {
+    color: rgba(255, 255, 255, 0.8)
+}
+.post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #30475E;
+    border-radius: 6%;
+    padding: 0.7em;
+}
+
+p, h1 {
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+}
+

@@ -7,6 +7,8 @@ module.exports = function(eleventyConfig) {
     // Copy CSS
     eleventyConfig.addPassthroughCopy("css");
 
+    eleventyConfig.addPassthroughCopy("_headers");
+
     eleventyConfig.addFilter('dateReadable', date => {
         return moment(date).utc().format('LL'); // E.g. May 31, 2019
       });

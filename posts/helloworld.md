@@ -6,6 +6,4 @@ tags: ['post']
 --- 
 # About this place
 
-Welcome to my little space on the Web.  
-I will put things I do or think here.  
-Thanks for visiting and stay tuned for more.
+Site under construction.

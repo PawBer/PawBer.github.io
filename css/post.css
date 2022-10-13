@@ -1,0 +1,38 @@
+html {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+    /* Background pattern from Toptal Subtle Patterns */
+    background-color: #e9e7e7;
+    font-size: 20px;
+}
+body {
+    background-color: transparent;
+}
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+a:hover {
+    color: rgba(255, 255, 255, 0.4)
+}
+.post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #c9c9c9;
+    border-radius: 6%;
+    padding: 0.7em;
+    -webkit-box-shadow: 5px 5px 9px -4px rgba(0,0,0,0.76); 
+    box-shadow: 5px 5px 9px -4px rgba(0,0,0,0.76);
+}
+
+p, h1 {
+    color:  rgb(0, 0, 0);
+    text-align: center;
+}
+

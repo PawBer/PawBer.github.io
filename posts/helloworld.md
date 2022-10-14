@@ -1,9 +1,10 @@
 --- 
-layout: blog-post.njk
-title: Hello World
+layout: index.njk
+title: There is nothing here for now
 date: 2020-12-11
 tags: ['post'] 
 --- 
-# About this place
+# There is nothing to see here
 
-Site under construction.
+But there could be later.
+

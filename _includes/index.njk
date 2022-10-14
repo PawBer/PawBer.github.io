@@ -1,27 +1,26 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-  <script src="https://kit.fontawesome.com/0fec082a2e.js" crossorigin="anonymous"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> 
-  <meta charset="utf-8"/>
-  <link rel="icon" href="../img/favicon.png">
-  <link rel="stylesheet" href="../css/index.css">
-  <title>Paweł Bernaciak</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paweł Bernaciak</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
 </head>
 <body>
-  <div class="container">
-    <div class="info">
-      <div class="photo">
-        <img id="myphoto" src="img/icon.png" alt="Me">
-      </div>
-      <nav class="socialmedia">
-        <p id="myname">Paweł Bernaciak<br>Site under construction</p>
-        <a href="https://github.com/PawBer/"><i class="fab fa-github-square"></i> GitHub</a>
-        <a href="mailto:pawelbernaciak@zohomail.eu"><i class="fas fa-envelope"></i> E-Mail</a>
-      </nav>
+    <nav class="navBar">
+      {%- for entry in collections.all | eleventyNavigation %}
+        <a href="{{ entry.url | url }}" class="navBarLink">{{ entry.title }}</a>
+      {%- endfor %}
+    </nav>
+    <div class="headerImage">
+        <h1 id="headerTitle">Paweł Bernaciak</h1>
     </div>
-    <div class="projects">
-      <h2>Projects and Blog Posts</h2>
-      {{ content | safe }}
+    <div class="content">
+        {{content | safe}}
     </div>
-  </div>  
 </body>
+</html>

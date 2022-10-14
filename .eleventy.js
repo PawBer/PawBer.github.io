@@ -1,13 +1,13 @@
+const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const moment = require('moment');
 moment.locale('en');
 
 module.exports = function(eleventyConfig) {
+    eleventyConfig.addPlugin(eleventyNavigationPlugin);
     // Copy img/
     eleventyConfig.addPassthroughCopy("img");
     // Copy CSS
     eleventyConfig.addPassthroughCopy("css");
-
-    eleventyConfig.addPassthroughCopy("_headers");
     
     eleventyConfig.addPassthroughCopy("kalkulator");
     eleventyConfig.addPassthroughCopy("kalkulator/static");

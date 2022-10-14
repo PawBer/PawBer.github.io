@@ -1,16 +1,7 @@
 ---
 layout: index.njk
-pagination:
-  data: collections.post
-  size: 10
-  reverse: true
-  alias: posts
+eleventyNavigation:
+    key: Home
+    order: 1
 ---
-{% for post in posts %}
-  <article>
-    <h1>
-      <a href="{{ post.url | url }}">{{ post.data.title }}</a>
-    </h1>
-    <time datetime="{{ post.date }}">{{ post.date | dateReadable }}</time>
-  </article>
-{% endfor %}
+This is my personal website. Once I code something useful I will share it here.

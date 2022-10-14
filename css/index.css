@@ -26,6 +26,9 @@ a:hover {
 }
 
 .navBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 0.25em;
     padding: 0.5em;
 }
@@ -63,6 +66,10 @@ a:hover {
     font-size: 18px;
     text-align: justify;
     width: 80vw;
+}
+
+.content > h1 {
+    text-align: center;
 }
 
 article {
